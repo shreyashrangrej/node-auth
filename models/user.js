@@ -32,14 +32,6 @@ const schema = new Schema({
     type: Boolean
   },
 
-  createdAt: {
-    type: Date
-  },
-
-  updatedAt: {
-    type: Date
-  },
-
   addedBy: {
     type: Schema.Types.ObjectId,
     ref: 'user'
@@ -66,14 +58,10 @@ const schema = new Schema({
 
   loginReactiveTime: {
     type: Date
-  },
-
-  timestamps: {
-    createdAt: 'createdAt',
-    updatedAt: 'updatedAt'
   }
 
 })
 
+schema.set('timestamps', true)
 const user = mongoose.model('user',schema);
 module.exports = user;

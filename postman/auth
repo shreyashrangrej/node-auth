@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "c4383bb0-d672-4287-bfbd-0c987fe53add",
+		"name": "node-auth",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests a user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18844298"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{KARAFI_HOST}}/api/register",
+					"host": [
+						"{{KARAFI_HOST}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{KARAFI_HOST}}/api/login",
+					"host": [
+						"{{KARAFI_HOST}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{KARAFI_HOST}}/api/forgot-password",
+					"host": [
+						"{{KARAFI_HOST}}"
+					],
+					"path": [
+						"api",
+						"forgot-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate OTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{KARAFI_HOST}}/api/validate-otp",
+					"host": [
+						"{{KARAFI_HOST}}"
+					],
+					"path": [
+						"api",
+						"validate-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{KARAFI_HOST}}/api/reset-password",
+					"host": [
+						"{{KARAFI_HOST}}"
+					],
+					"path": [
+						"api",
+						"reset-password"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
